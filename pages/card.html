@@ -1,0 +1,15 @@
+{% for i in episodes %}
+<div class="card">
+        <img src={{i['image']['medium']}} class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{i['name']}}</h5>
+          <p class="card-text">{{i['summary']}}</p>
+          <a href={{i['url']}}">more</a>
+          <p class="card-text"><small class="text-muted">airdate {{i['airdate']}}</small></p>
+        </div>
+      </div>
+
+{% endfor %}
+
+
+

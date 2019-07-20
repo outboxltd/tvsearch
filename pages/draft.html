@@ -1,0 +1,22 @@
+{% for i in episodes %}
+                <!-- loop start -->
+
+                <!-- its good -->
+                <!-- <li>{{i['name']}}</li>
+                <a href={{i['url']}}> <img src={{i['image']['medium']}} alt=""> </a> -->
+                <!-- its good -->
+
+                <!-- testing -->
+                <div class="card" style="width: 18rem;">
+                        <img src={{i['image']['medium']}} class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{i['name']}}</h5>
+                          <p class="card-text"> {{i['summary']}} </p>
+                          <a href={{i['url']}} class="btn btn-primary">link</a>
+                        </div>
+                </div>
+
+                <!-- testing -->
+
+                <!-- end of the loop -->
+                {% endfor %}
