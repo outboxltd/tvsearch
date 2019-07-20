@@ -10,5 +10,9 @@ with open('./data/143.json') as the_file:
 # for i in data:
 #     pprint(i['url']);
 
+# for i in data['_embedded']['episodes']:
+#    print(i['url'])
+#
+# get images
 for i in data['_embedded']['episodes']:
-   print(i['url'])
+   print(i['image']['medium'])
